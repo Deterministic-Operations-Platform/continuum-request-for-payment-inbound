@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 
 class RequestHandlerTest {
     @Test
-    fun handles a health check() {
+    fun handlesHealthCheck() {
         val handler = RequestHandler(ProcessingService("continuum-request-for-payment-inbound"))
 
         assertEquals("continuum-request-for-payment-inbound processed: health-check", handler.handle("health-check"))
